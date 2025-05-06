@@ -38,7 +38,7 @@ const Navbar = () => {
           href="#home" 
           className="text-2xl font-bold text-white flex items-center"
         >
-          <span className="text-gradient">NOVA</span>
+          <span className="text-gradient">NOVAMIND</span>
           <span className="text-nova-cyan ml-1">.</span>
         </a>
         

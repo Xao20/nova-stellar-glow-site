@@ -22,10 +22,14 @@ const Feature = ({
       className={cn(
         "glass-effect p-6 relative overflow-hidden group",
         "transform transition-all duration-500 hover:-translate-y-2",
-        "animate-fade-in opacity-0",
         className
       )}
-      style={{ animationDelay: `${delay}ms`, animationFillMode: 'forwards' }}
+      // Removed the animate-fade-in and opacity-0 classes
+      // Using inline style for animation delay to ensure it works
+      style={{ 
+        animationDelay: `${delay}ms`, 
+        animationFillMode: 'forwards' 
+      }}
     >
       <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-nova-purple/10 group-hover:bg-nova-purple/20 transition-all duration-500"></div>
       

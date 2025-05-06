@@ -38,6 +38,7 @@ const GalleryItem = ({
             "w-full h-full object-cover transition-transform duration-700",
             isHovered ? "scale-110" : "scale-100"
           )}
+          loading="lazy" // Add lazy loading for better performance
         />
         
         {/* Overlay */}

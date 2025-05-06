@@ -29,7 +29,7 @@ const Footer = () => {
               href="#home" 
               className="text-2xl font-bold text-white flex items-center mb-4"
             >
-              <span className="text-gradient">NOVA</span>
+              <span className="text-gradient">NOVAMIND</span>
               <span className="text-nova-cyan ml-1">.</span>
             </a>
             <p className="text-gray-400">
@@ -73,10 +73,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Nova Headquarters</li>
+              <li>NovaMind Headquarters</li>
               <li>123 Cosmic Avenue</li>
               <li>Stellar City, SC 12345</li>
-              <li className="pt-2">info@nova-stellar.com</li>
+              <li className="pt-2">info@novamind.com</li>
             </ul>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Footer = () => {
           "flex flex-col md:flex-row justify-between items-center"
         )}>
           <p className="text-gray-500 text-sm">
-            © {currentYear} Nova. All rights reserved.
+            © {currentYear} NovaMind. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">

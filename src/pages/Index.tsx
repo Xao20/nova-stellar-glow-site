@@ -17,18 +17,27 @@ const Index = () => {
   const galleryRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
+    // Fix the animation issue by removing opacity-0 class after component mounts
+    const sections = [aboutRef, servicesRef, galleryRef];
+    
+    // Add visible class to sections
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight * 0.8;
       
-      [aboutRef, servicesRef, galleryRef].forEach(ref => {
+      sections.forEach(ref => {
         if (ref.current && scrollPosition > ref.current.offsetTop) {
           ref.current.classList.add('animate-fade-in');
+          ref.current.classList.remove('opacity-0');
         }
       });
     };
     
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on mount
+    
+    // Initial check on mount
+    setTimeout(() => {
+      handleScroll();
+    }, 100);
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -169,16 +178,16 @@ const Index = () => {
       <section 
         id="about" 
         ref={aboutRef}
-        className="py-20 md:py-32 px-4 relative opacity-0"
+        className="py-20 md:py-32 px-4 relative opacity-0 transition-opacity duration-1000"
       >
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              About <span className="text-gradient">Nova</span>
+              About <span className="text-gradient">NovaMind</span>
             </h2>
             
             <p className="text-gray-300">
-              At Nova, we blend cutting-edge technology with cosmic creativity to deliver digital experiences that are out of this world. Our mission is to push the boundaries of what's possible in the digital universe.
+              At NovaMind, we blend cutting-edge technology with cosmic creativity to deliver digital experiences that are out of this world. Our mission is to push the boundaries of what's possible in the digital universe.
             </p>
           </div>
           
@@ -210,7 +219,7 @@ const Index = () => {
       <section 
         id="services" 
         ref={servicesRef}
-        className="py-20 md:py-32 px-4 bg-nova-darker relative opacity-0"
+        className="py-20 md:py-32 px-4 bg-nova-darker relative opacity-0 transition-opacity duration-1000"
       >
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-nova-purple/10 rounded-full blur-3xl"></div>
@@ -245,7 +254,7 @@ const Index = () => {
       <section 
         id="gallery" 
         ref={galleryRef}
-        className="py-20 md:py-32 px-4 relative opacity-0"
+        className="py-20 md:py-32 px-4 relative opacity-0 transition-opacity duration-1000"
       >
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
