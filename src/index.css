@@ -7,26 +7,50 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    /* Light theme */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 336 93% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 259 57% 68%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 321 61% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 336 93% 56%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark theme */
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 0 0% 3%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 0 0% 3%;
     --popover-foreground: 0 0% 98%;
-    --primary: 270 70% 59%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 5.9% 10%;
+    --primary: 336 93% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 259 57% 68%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 5.9% 10%;
+    --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 300 80% 70%;
+    --accent: 321 61% 25%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 10%;
-    --input: 240 5.9% 10%;
-    --ring: 270 70% 59%;
-    --radius: 0.75rem;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 336 93% 56%;
   }
   
   * {
@@ -35,7 +59,7 @@
   }
   
   body {
-    @apply bg-nova-dark text-foreground antialiased;
+    @apply bg-nova-black text-foreground antialiased dark:bg-nova-black;
   }
 }
 
@@ -54,16 +78,16 @@
   
   .glow-text {
     @apply relative inline-block;
-    text-shadow: 0 0 10px rgba(255,109,255,0.5), 0 0 20px rgba(255,109,255,0.3);
+    text-shadow: 0 0 10px rgba(251,37,118,0.5), 0 0 20px rgba(251,37,118,0.3);
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-nova-purple to-nova-magenta;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-nova-pink to-nova-purple;
   }
   
   .glow-border {
     @apply border-2 rounded-lg relative;
-    box-shadow: 0 0 10px rgba(110, 58, 212, 0.5), inset 0 0 10px rgba(110, 58, 212, 0.3);
+    box-shadow: 0 0 10px rgba(139, 114, 231, 0.5), inset 0 0 10px rgba(139, 114, 231, 0.3);
   }
 
   .stagger-animation > * {

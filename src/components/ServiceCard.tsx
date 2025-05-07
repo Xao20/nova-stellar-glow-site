@@ -22,19 +22,19 @@ const ServiceCard = ({
       className
     )}>
       {/* Background layers */}
-      <div className="absolute inset-0 bg-nova-space rounded-lg z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-nova-purple/20 to-nova-blue/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20"></div>
+      <div className="absolute inset-0 bg-nova-black rounded-lg z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-nova-pink/20 to-nova-purple/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20"></div>
       
       {/* Border glow effect */}
       <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" 
            style={{ 
-             boxShadow: '0 0 15px 2px rgba(110, 58, 212, 0.3), inset 0 0 15px rgba(110, 58, 212, 0.3)',
+             boxShadow: '0 0 15px 2px rgba(251, 37, 118, 0.3), inset 0 0 15px rgba(251, 37, 118, 0.3)',
            }}>
       </div>
       
       {/* Content */}
       <div className="relative z-30">
-        <div className="text-nova-cyan mb-4 transform transition-all duration-500 group-hover:scale-110">
+        <div className="text-nova-pink mb-4 transform transition-all duration-500 group-hover:scale-110">
           {icon}
         </div>
         
@@ -47,7 +47,7 @@ const ServiceCard = ({
         </p>
         
         <div className="mt-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-          <span className="text-nova-accent font-medium flex items-center">
+          <span className="text-nova-pink font-medium flex items-center">
             Learn more 
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

@@ -26,14 +26,14 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				nova: {
-					dark: '#0B0E18',
-					darker: '#070A12',
-					space: '#161A2C',
-					purple: '#6E3AD4',
-					magenta: '#D13EDF',
-					blue: '#3B83F3',
-					cyan: '#22DDF2',
-					accent: '#FF6DFF',
+					pink: '#FB2576',
+					black: '#000000',
+					purple: '#8B72E7',
+					white: '#FFFFFF',
+					darkpurple: '#582259',
+					dark: '#0B0E18',  // keeping for backward compatibility
+					darker: '#070A12', // keeping for backward compatibility
+					space: '#161A2C',  // keeping for backward compatibility
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -63,16 +63,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
@@ -129,7 +119,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'space-gradient': 'linear-gradient(to bottom, #0B0E18, #161A2C)',
-				'hero-glow': 'radial-gradient(circle at center, rgba(110, 58, 212, 0.2) 0%, rgba(24, 24, 39, 0) 70%)',
+				'hero-glow': 'radial-gradient(circle at center, rgba(139, 114, 231, 0.2) 0%, rgba(24, 24, 39, 0) 70%)',
 			}
 		}
 	},

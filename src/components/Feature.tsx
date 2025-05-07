@@ -24,16 +24,14 @@ const Feature = ({
         "transform transition-all duration-500 hover:-translate-y-2",
         className
       )}
-      // Removed the animate-fade-in and opacity-0 classes
-      // Using inline style for animation delay to ensure it works
       style={{ 
         animationDelay: `${delay}ms`, 
         animationFillMode: 'forwards' 
       }}
     >
-      <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-nova-purple/10 group-hover:bg-nova-purple/20 transition-all duration-500"></div>
+      <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-nova-purple/10 group-hover:bg-nova-pink/20 transition-all duration-500"></div>
       
-      <div className="text-nova-cyan mb-4 relative z-10 group-hover:scale-110 transform transition-transform duration-500">
+      <div className="text-nova-pink mb-4 relative z-10 group-hover:scale-110 transform transition-transform duration-500">
         {icon}
       </div>
       
@@ -45,7 +43,7 @@ const Feature = ({
         {description}
       </p>
       
-      <div className="absolute top-0 left-0 w-1 h-0 bg-gradient-to-b from-nova-purple to-nova-magenta group-hover:h-full transition-all duration-500"></div>
+      <div className="absolute top-0 left-0 w-1 h-0 bg-gradient-to-b from-nova-pink to-nova-purple group-hover:h-full transition-all duration-500"></div>
     </div>
   );
 };
