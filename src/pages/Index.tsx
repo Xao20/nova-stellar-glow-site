@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -134,16 +133,16 @@ const Index = () => {
             <div className="mb-6">
               <span className="block text-lg md:text-xl text-nova-purple font-semibold mb-3 animate-pulse-glow">Discover Innovation</span>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                <span className="block mb-2">Welcome to</span>
+                <span className="block mb-2 text-white">Welcome to</span>
                 <span className="relative inline-block">
-                  <span className="text-gradient relative z-10">NovaMind Team</span>
+                  <span className="text-gradient relative z-10 font-extrabold">NovaMind Team</span>
                   <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-nova-pink to-nova-purple"></span>
                   <div className="absolute -inset-2 rounded-lg bg-nova-purple/20 blur-xl opacity-70 -z-10 animate-pulse-glow"></div>
                 </span>
               </h1>
             </div>
             
-            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
               Embark on a cosmic journey through digital innovation and creative exploration.
               We build experiences that transcend the ordinary.
             </p>
@@ -168,7 +167,7 @@ const Index = () => {
             <div className="mt-16 animate-bounce">
               <a 
                 href="#about" 
-                className="inline-block text-gray-400 hover:text-white"
+                className="inline-block text-white hover:text-nova-purple"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -190,11 +189,11 @@ const Index = () => {
       >
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               About <span className="text-gradient">NovaMind</span>
             </h2>
             
-            <p className="text-gray-300">
+            <p className="text-white">
               At NovaMind, we blend cutting-edge technology with cosmic creativity to deliver digital experiences that are out of this world. Our mission is to push the boundaries of what's possible in the digital universe.
             </p>
           </div>
@@ -214,7 +213,7 @@ const Index = () => {
           <div className="mt-16 text-center">
             <Button 
               variant="ghost"
-              className="text-nova-accent hover:text-nova-magenta hover:bg-transparent group"
+              className="text-nova-purple hover:text-nova-magenta hover:bg-transparent group"
             >
               Discover our story
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -327,4 +326,3 @@ const Index = () => {
 };
 
 export default Index;
-

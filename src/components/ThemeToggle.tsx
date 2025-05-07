@@ -22,8 +22,9 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
       {theme === 'dark' ? (
         <Sun className="h-5 w-5 text-nova-white transition-all" />
       ) : (
-        <Moon className="h-5 w-5 transition-all" />
+        <Moon className="h-5 w-5 text-nova-black transition-all" />
       )}
+      <span className="sr-only">{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
     </Button>
   );
 };
