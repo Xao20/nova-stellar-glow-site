@@ -131,11 +131,19 @@ const Index = () => {
         {/* Content */}
         <div className="container mx-auto relative z-10 stagger-animation">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              Discover the <span className="text-gradient">Stellar</span> Experience
-            </h1>
+            <div className="mb-6">
+              <span className="block text-lg md:text-xl text-nova-purple font-semibold mb-3 animate-pulse-glow">Discover Innovation</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                <span className="block mb-2">Welcome to</span>
+                <span className="relative inline-block">
+                  <span className="text-gradient relative z-10">NovaMind Team</span>
+                  <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-nova-pink to-nova-purple"></span>
+                  <div className="absolute -inset-2 rounded-lg bg-nova-purple/20 blur-xl opacity-70 -z-10 animate-pulse-glow"></div>
+                </span>
+              </h1>
+            </div>
             
-            <p className="text-lg md:text-xl text-gray-300 mb-8">
+            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Embark on a cosmic journey through digital innovation and creative exploration.
               We build experiences that transcend the ordinary.
             </p>
@@ -319,3 +327,4 @@ const Index = () => {
 };
 
 export default Index;
+
