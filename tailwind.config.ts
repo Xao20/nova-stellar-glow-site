@@ -1,7 +1,6 @@
-
 import type { Config } from "tailwindcss";
 
-export default {
+const config = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
@@ -36,12 +35,13 @@ export default {
 					space: '#161A2C',  // keeping for backward compatibility
 				},
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#FB2576',
+					dark: '#000000',
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#8B72E7',
+					light: '#FFFFFF',
+					dark: '#582259',
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -66,6 +66,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				clash: ["Clash Display", "sans-serif"],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -83,11 +84,11 @@ export default {
 				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-10px)' }
+					'50%': { transform: 'translateY(-20px)' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
-					'50%': { opacity: '1', transform: 'scale(1.05)' }
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
@@ -123,5 +124,7 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
+
+export default config;
