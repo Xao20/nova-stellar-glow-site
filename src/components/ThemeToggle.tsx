@@ -20,9 +20,9 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <Sun className="h-6 w-6 text-yellow-300 transition-all" />
+        <Sun className="h-6 w-6 text-yellow-300 transition-all drop-shadow-[0_0_3px_rgba(253,224,71,0.7)]" />
       ) : (
-        <Moon className="h-6 w-6 text-nova-purple transition-all" />
+        <Moon className="h-6 w-6 text-nova-purple transition-all drop-shadow-[0_0_3px_rgba(139,114,231,0.7)]" />
       )}
       <span className="sr-only">{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
     </Button>
