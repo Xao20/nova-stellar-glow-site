@@ -90,6 +90,11 @@
     box-shadow: 0 0 10px rgba(139, 114, 231, 0.5), inset 0 0 10px rgba(139, 114, 231, 0.3);
   }
 
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(139, 114, 231, 0.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
   .stagger-animation > * {
     opacity: 0;
     transform: translateY(20px);

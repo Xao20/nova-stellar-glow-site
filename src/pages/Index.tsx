@@ -1,3 +1,4 @@
+
 import { useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -131,25 +132,25 @@ const Index = () => {
         <div className="container mx-auto relative z-10 stagger-animation">
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6">
-              <span className="block text-lg md:text-xl text-nova-purple font-semibold mb-3 animate-pulse-glow">Discover Innovation</span>
+              <span className="inline-block text-lg md:text-xl text-nova-purple bg-black/30 px-4 py-1 rounded-full font-semibold mb-3 animate-pulse-glow shadow-glow">Discover Innovation</span>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                <span className="block mb-2 text-white">Welcome to</span>
+                <span className="block mb-2 text-white drop-shadow-md">Welcome to</span>
                 <span className="relative inline-block">
-                  <span className="text-gradient relative z-10 font-extrabold">NovaMind Team</span>
-                  <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-nova-pink to-nova-purple"></span>
-                  <div className="absolute -inset-2 rounded-lg bg-nova-purple/20 blur-xl opacity-70 -z-10 animate-pulse-glow"></div>
+                  <span className="text-gradient relative z-10 font-extrabold drop-shadow-[0_2px_10px_rgba(251,37,118,0.8)]">NovaMind Team</span>
+                  <span className="absolute -bottom-1 left-0 w-full h-2 bg-gradient-to-r from-nova-pink to-nova-purple"></span>
+                  <div className="absolute -inset-2 rounded-lg bg-nova-purple/30 blur-xl opacity-80 -z-10 animate-pulse-glow"></div>
                 </span>
               </h1>
             </div>
             
-            <p className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl font-medium text-white drop-shadow-md mb-8 max-w-2xl mx-auto backdrop-blur-sm bg-black/20 p-4 rounded-lg">
               Embark on a cosmic journey through digital innovation and creative exploration.
               We build experiences that transcend the ordinary.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
-                className="px-8 py-6 bg-nova-purple hover:bg-nova-purple/90 text-white rounded-lg"
+                className="px-8 py-6 bg-nova-purple hover:bg-nova-purple/90 text-white rounded-lg text-lg font-bold shadow-glow"
               >
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -157,7 +158,7 @@ const Index = () => {
               
               <Button 
                 variant="outline"
-                className="px-8 py-6 border-nova-purple/50 text-white hover:bg-nova-purple/10 rounded-lg"
+                className="px-8 py-6 border-nova-purple/50 text-white hover:bg-nova-purple/10 rounded-lg text-lg font-bold shadow-md"
               >
                 Learn More
                 <Download className="ml-2 w-5 h-5" />
@@ -167,7 +168,7 @@ const Index = () => {
             <div className="mt-16 animate-bounce">
               <a 
                 href="#about" 
-                className="inline-block text-white hover:text-nova-purple"
+                className="inline-block text-white hover:text-nova-pink bg-black/30 rounded-full p-3"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -189,11 +190,11 @@ const Index = () => {
       >
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-md">
               About <span className="text-gradient">NovaMind</span>
             </h2>
             
-            <p className="text-white">
+            <p className="text-xl text-white bg-black/30 p-4 rounded-lg shadow-md">
               At NovaMind, we blend cutting-edge technology with cosmic creativity to deliver digital experiences that are out of this world. Our mission is to push the boundaries of what's possible in the digital universe.
             </p>
           </div>
@@ -213,7 +214,7 @@ const Index = () => {
           <div className="mt-16 text-center">
             <Button 
               variant="ghost"
-              className="text-nova-purple hover:text-nova-magenta hover:bg-transparent group"
+              className="text-nova-pink hover:text-nova-purple hover:bg-transparent group font-bold bg-black/30 py-3 px-6 rounded-md"
             >
               Discover our story
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -235,11 +236,11 @@ const Index = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-md">
               Our <span className="text-gradient">Services</span>
             </h2>
             
-            <p className="text-gray-300">
+            <p className="text-xl text-white bg-black/30 p-4 rounded-lg shadow-md">
               We offer a comprehensive range of digital services to help your business reach new cosmic heights.
             </p>
           </div>
@@ -265,11 +266,11 @@ const Index = () => {
       >
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-md">
               Our <span className="text-gradient">Projects</span>
             </h2>
             
-            <p className="text-gray-300">
+            <p className="text-xl text-white bg-black/30 p-4 rounded-lg shadow-md">
               Explore our cosmic portfolio of stellar projects that push the boundaries of digital innovation.
             </p>
           </div>
@@ -289,7 +290,7 @@ const Index = () => {
           <div className="mt-16 text-center">
             <Button 
               variant="outline" 
-              className="border-nova-accent text-nova-accent hover:bg-nova-accent/10 group"
+              className="border-nova-pink text-nova-pink hover:bg-nova-pink/10 group font-bold"
             >
               View All Projects
               <ExternalLink className="ml-2 w-4 h-4 group-hover:rotate-45 transition-transform" />
@@ -306,11 +307,11 @@ const Index = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white drop-shadow-md">
               Contact <span className="text-gradient">Us</span>
             </h2>
             
-            <p className="text-gray-300">
+            <p className="text-xl text-white bg-black/30 p-4 rounded-lg shadow-md">
               Ready to start your cosmic journey? Get in touch with us today.
             </p>
           </div>
